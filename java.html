@@ -5,7 +5,7 @@
 <title>Northview College | Events</title>
 
 <style>
-/* ---------- BASE ---------- */
+
 body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
@@ -13,7 +13,7 @@ body {
     color: #e5e7eb;
 }
 
-/* ---------- HEADER ---------- */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ nav a:hover {
     color: #14b8a6;
 }
 
-/* ---------- FILTERS ---------- */
+
 .filters {
     display: flex;
     gap: 12px;
@@ -60,7 +60,7 @@ nav a:hover {
     border-radius: 6px;
 }
 
-/* ---------- EVENTS ---------- */
+
 .events {
     padding: 30px;
     display: grid;
@@ -96,7 +96,7 @@ nav a:hover {
     border-radius: 6px;
 }
 
-/* ---------- PAGINATION ---------- */
+
 .pagination {
     text-align: center;
     margin-bottom: 30px;
@@ -112,7 +112,7 @@ nav a:hover {
     border-radius: 6px;
 }
 
-/* ---------- FOOTER ---------- */
+
 footer {
     background: #020617;
     text-align: center;
@@ -130,7 +130,7 @@ footer a {
 
 <body>
 
-<!-- HEADER -->
+
 <header>
     <div class="brand">
         <img src="https://via.placeholder.com/45" alt="Logo">
@@ -144,7 +144,7 @@ footer a {
     </nav>
 </header>
 
-<!-- FILTERS -->
+
 <section class="filters">
     <input type="text" id="searchInput" placeholder="Search events...">
     <select id="categoryFilter">
@@ -160,17 +160,17 @@ footer a {
     </select>
 </section>
 
-<!-- EVENTS -->
+
 <section id="eventsContainer" class="events"></section>
 
-<!-- PAGINATION -->
+
 <div class="pagination">
     <button onclick="prevPage()">Previous</button>
     <span id="pageInfo"></span>
     <button onclick="nextPage()">Next</button>
 </div>
 
-<!-- FOOTER -->
+
 <footer>
     <p>📞 +91 98765 43210 | ✉ info@northviewcollege.edu</p>
     <a href="#">LinkedIn</a>
@@ -179,7 +179,7 @@ footer a {
 </footer>
 
 <script>
-/* ---------- DATA ---------- */
+
 const events = [
     { title: "Football Tournament", date: "2026-02-06", category: "Sports", description: "Inter-college football championship" },
     { title: "AI Workshop", date: "2026-02-08", category: "Workshop", description: "Hands-on artificial intelligence training" },
@@ -192,7 +192,7 @@ const events = [
 let currentPage = 1;
 const perPage = 5;
 
-/* ---------- FUNCTIONS ---------- */
+
 function filterEvents() {
     let filtered = [...events];
     const search = searchInput.value.toLowerCase();
@@ -249,3 +249,4 @@ filterEvents();
 
 </body>
 </html>
+
