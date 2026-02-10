@@ -249,4 +249,3 @@ filterEvents();
 
 </body>
 </html>
-# North-View-College-Event
